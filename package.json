@@ -33,6 +33,10 @@
     "standard": "^10.0.3",
     "webpack": "^1.14.0"
   },
+  "files": [
+    "dist/*.js",
+    "types/*.d.ts"
+  ],
   "keywords": [
     "analytics",
     "universal analytics",
@@ -55,5 +59,6 @@
       "ga"
     ],
     "env": "mocha"
-  }
+  },
+  "typings": "types/index.d.ts"
 }
