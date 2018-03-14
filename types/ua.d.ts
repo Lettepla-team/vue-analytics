@@ -2,11 +2,11 @@ import VueRouter from 'vue-router'
 
 export declare class VueAnalytics {
   constructor (initConf?: VueAnalyticsOptions);
-  trackView (name: string, trackPage: boolean): void;
+  trackView (name: string, trackPage?: boolean): void;
   trackEvent (
-    category: string; action: string; label: string; value: any;
+    category: string; action?: string; label?: string; value?: any;
   ): void;
-  trackException (description: string, isFatal: boolean);
+  trackException (description: string, isFatal?: boolean);
   trackTiming (
     timingCategory: string, timingVar: string, 
     timingValue: number, timingLabel?: string
