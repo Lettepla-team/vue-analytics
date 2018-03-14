@@ -2,21 +2,21 @@ import VueRouter from 'vue-router'
 
 export declare class VueAnalytics {
   constructor (initConf?: VueAnalyticsOptions);
-  trackView (name: string, trackPage?: boolean): void;
-  trackEvent (category: string, action?: string, label?: string, value?: any): void;
-  trackException (description: string, isFatal?: boolean);
-  trackTiming (timingCategory: string, timingVar: string, timingValue: number, timingLabel?: string): void;
-  injectGlobalDimension (dimensionNumber: number, value: string|number): void;
-  injectGlobalMetric (metricNumber: number, value: string|number): void;
-  changeSessionLanguage (code: string): void;
+  trackView (name: String, trackPage?: boolean): void;
+  trackEvent (category: String, action?: String, label?: String, value?: any): void;
+  trackException (description: String, isFatal?: boolean);
+  trackTiming (timingCategory: String, timingVar: String, timingValue: number, timingLabel?: String): void;
+  injectGlobalDimension (dimensionNumber: number, value: String|number): void;
+  injectGlobalMetric (metricNumber: number, value: String|number): void;
+  changeSessionLanguage (code: String): void;
 }
 
 export declare class VueAnalyticsOptions {
-  appName: string;
-  appVersion: string;
-  trackingId: string;
+  appName: String;
+  appVersion: String;
+  trackingId: String;
   vueRouter: VueRouter;
-  ignoredViews: string[];
+  ignoredViews: String[];
   trackPage: boolean;
   globalDimensions?: Dimension[];
   globalMetrics?: Metric[];
@@ -24,10 +24,10 @@ export declare class VueAnalyticsOptions {
 
 export type Dimension = {
   dimension: number;
-  value: string;
+  value: String;
 }
 
 export type Metric = {
   metric: number;
-  value: string;
+  value: String;
 }
