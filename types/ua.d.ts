@@ -10,6 +10,8 @@ export declare class VueAnalytics {
   injectGlobalDimension (dimensionNumber: number, value: String|number): void;
   injectGlobalMetric (metricNumber: number, value: String|number): void;
   changeSessionLanguage (code: String): void;
+
+  static install: PluginFunction<never>;
 }
 
 export declare class VueAnalyticsOptions {
