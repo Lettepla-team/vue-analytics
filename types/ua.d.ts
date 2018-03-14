@@ -1,7 +1,8 @@
 import VueRouter from 'vue-router'
 
 export declare class VueAnalytics {
-  constructor (initConf?: VueAnalyticsOptions);
+  constructor (options?: VueAnalyticsOptions);
+
   trackView (name: String, trackPage?: boolean): void;
   trackEvent (category: String, action?: String, label?: String, value?: any): void;
   trackException (description: String, isFatal?: boolean);
